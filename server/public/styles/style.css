@@ -1,0 +1,63 @@
+
+body{
+  background-color: #FC029C;
+}
+
+main {
+  min-height: 600px;
+  padding: 50px;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 10px;
+  border: 5px solid white;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+nav {
+  color:white;
+}
+
+header {
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  border: 1px solid black;
+}
+
+a {
+  color: white;
+}
+
+span {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+
+
+.dogs {
+  background-color: #02BDFC;
+}
+
+.cats {
+  background-color: #FC7B02;
+}
+
+.reptiles {
+  background-color: #02FCCA;
+}
+
+.info {
+  border-radius: 10px;
+  border: 5px solid black;
+  background-color: white;
+
+}

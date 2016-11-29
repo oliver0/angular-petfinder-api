@@ -1,4 +1,13 @@
-<div ng-controller="DogController" class="container">
-  <h1>DOGS!</h1>
-  <img ng-src="{{dogs.animal.media.photos.photo[2].$t}}" />
+<div class="container">
+<div ng-controller="DogController" class="row">
+  <div class=" col-sm-5 col-sm-offset-1"><img ng-src="{{dogs.animal.media.photos.photo[2].$t}}" /></div>
+  <div class="col-sm-offset-1 col-sm-5 info">
+    <h2>{{dogs.animal.name.$t}}</h2>
+    <h3>Age: <span>{{dogs.animal.age.$t}}</span></h3>
+    <h3>Sex: <span>{{dogs.animal.sex.$t}}</span></h3>
+    <h3>Location: <span>{{dogs.animal.contact.state.$t}}, {{dogs.animal.contact.city.$t}} </span></h3>
+    <h3>Email: <span>{{dogs.animal.contact.email.$t}}</span></h3>
+    <h3>Phone: <span>{{dogs.animal.contact.phone.$t}}</span></h3>
+  </div>
+</div>
 </div>

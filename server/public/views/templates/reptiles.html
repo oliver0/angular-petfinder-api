@@ -1,4 +1,13 @@
-<div ng-controller="ReptileController" class="container">
-  <h1>Reptiles!</h1>
-  <img ng-src="{{reptiles.animal.media.photos.photo[2].$t}}" />
+<div class="container">
+  <div ng-controller="ReptileController" class="row">
+    <div class="col-sm-5 col-sm-offset-1"><img ng-src="{{reptiles.animal.media.photos.photo[2].$t}}" /></div>
+    <div class="col-sm-offset-1 col-sm-5 info">
+      <h2>{{reptiles.animal.name.$t}}</h2>
+      <h3>Age: <span>{{reptiles.animal.age.$t}}</span></h3>
+      <h3>Sex: <span>{{reptiles.animal.sex.$t}}</span></h3>
+      <h3>Location: <span>{{reptiles.animal.contact.state.$t}}, {{reptiles.animal.contact.city.$t}} </span></h3>
+      <h3>Email: <span>{{reptiles.animal.contact.email.$t}}</span></h3>
+      <h3>Phone: <span>{{reptiles.animal.contact.phone.$t}}</span></h3>
+    </div>
+  </div>
 </div>

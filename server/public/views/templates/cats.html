@@ -1,4 +1,13 @@
-<div ng-controller="CatController" class="container">
-  <h1>Cats!</h1>
-  <img ng-src="{{cats.animal.media.photos.photo[2].$t}}" />
+<div class="container">
+  <div ng-controller="CatController" class="row">
+    <div class="col-sm-5 col-sm-offset-1"><img ng-src="{{cats.animal.media.photos.photo[2].$t}}" /></div>
+    <div class="col-sm-offset-1 col-sm-5 info">
+      <h2>{{cats.animal.name.$t}}</h2>
+      <h3>Age: <span>{{cats.animal.age.$t}}</span></h3>
+      <h3>Sex: <span>{{cats.animal.sex.$t}}</span></h3>
+      <h3>Location: <span>{{cats.animal.contact.state.$t}}, {{cats.animal.contact.city.$t}} </span></h3>
+      <h3>Email: <span>{{cats.animal.contact.email.$t}}</span></h3>
+      <h3>Phone: <span>{{cats.animal.contact.phone.$t}}</span></h3>
+    </div>
+  </div>
 </div>
